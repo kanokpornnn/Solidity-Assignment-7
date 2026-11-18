@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f6f5ef;
+  color: #283f35;
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #244d3b;
+}
+
+header p {
+  color: #87938a;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.student-info {
+  background: #e7ede5;
+  border: 1px solid #d5e0d3;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.student-info h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #315c46;
+}
+
+.student-info p {
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.bank-card {
+  background: #ffffff;
+  border: 1px solid #e5e9e1;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(35, 65, 47, 0.06);
+}
+
+.bank-card > h2 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.bank-card > p {
+  font-size: 13px;
+  color: #7d8d82;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#connectBtn {
+  background: #315c46;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#walletAddress {
+  margin-top: 12px;
+  font-size: 12px;
+  text-align: center;
+  color: #6d8073;
+  overflow-wrap: anywhere;
+}
+
+.balance-box {
+  background: #f0f4ed;
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.balance-box p {
+  font-size: 13px;
+  color: #718376;
+}
+
+#balance {
+  font-size: 30px;
+  color: #244d3b;
+  margin: 12px 0 18px;
+}
+
+#checkBtn {
+  background: #ffffff;
+  color: #315c46;
+  border: 1px solid #c8d8cb;
+}
+
+.transaction-box {
+  margin-top: 26px;
+}
+
+.transaction-box label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#amount {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9e2d8;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+#amount:focus {
+  border-color: #5b8a70;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.buttons button {
+  flex: 1;
+}
+
+#depositBtn {
+  background: #315c46;
+  color: white;
+}
+
+#withdrawBtn {
+  background: #e9d8c3;
+  color: #654a34;
+}
+
+#status {
+  margin-top: 24px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #f5f6f2;
+  color: #617467;
+  font-size: 13px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #9aa69c;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px 12px;
+  }
+
+  .bank-card {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  #balance {
+    font-size: 26px;
+  }
+}

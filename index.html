@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank DApp | Assignment 7</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Bank DApp</h1>
+        <p>Solidity Assignment 7</p>
+      </header>
+
+      <section class="student-info">
+        <h3>Student Information</h3>
+        <p>Name: Kanokporn Chaiyakhao</p>
+        <p>Student ID: 66085098</p>
+      </section>
+
+      <section class="bank-card">
+        <h2>My Bank</h2>
+        <p>Sepolia Testnet</p>
+
+        <button id="connectBtn">Connect MetaMask</button>
+
+        <p id="walletAddress">Wallet not connected</p>
+
+        <div class="balance-box">
+          <p>Current Balance</p>
+          <h2 id="balance">0 ETH</h2>
+          <button id="checkBtn">Check Balance</button>
+        </div>
+
+        <div class="transaction-box">
+          <label for="amount">Amount (ETH)</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount e.g. 0.001"
+            min="0"
+            step="any"
+          />
+
+          <div class="buttons">
+            <button id="depositBtn">Deposit</button>
+            <button id="withdrawBtn">Withdraw</button>
+          </div>
+        </div>
+
+        <p id="status">Please connect your wallet.</p>
+      </section>
+
+      <footer>
+        <p>Assignment 6 | Bank Smart Contract</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.16.0/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
